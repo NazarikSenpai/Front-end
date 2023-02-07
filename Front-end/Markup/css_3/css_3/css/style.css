@@ -89,14 +89,14 @@ h6 {
 }
 
 .example-block {
-	width: 400px;
-	height: 400px;
-	margin: 10px;
-	padding: 20px;
 	border: 3px solid #000;
 }
 
 .example-inline {
+	display: inline-block;
+	padding: 20px;
+	border: 1px solid #000;
+	width: 300px;
 	/*width: 200px;4
 	margin: 10px;
 	padding: 10px;
