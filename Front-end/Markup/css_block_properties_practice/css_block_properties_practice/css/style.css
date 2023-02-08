@@ -91,8 +91,16 @@ h6 {
 .redtext{
 	color: red;
 }
-.div_text1{
+.div_lefttext{
 	line-height: 25px;
 	width: 50%;
 	margin: 53px 0px 33px 50px;
+}
+.span_text1{
+	display: block;
+	margin: 0px 0px 0px 49px;
+}
+.a_text{
+	display: block;
+	margin: 0px 0px 32px 48px;
 }
