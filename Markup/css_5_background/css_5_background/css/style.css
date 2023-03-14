@@ -136,10 +136,17 @@ body {
 	margin: 30px;
 }
 .block5 {
-	background: rgba(24, 181, 164, 0.53);
+	background: url(../img/americano-small.jpg) no-repeat left 90%/50px, url(https://www.wikihow.com/images/thumb/d/d2/Be-Good-at-Capoeira-Step-11-Version-2.jpg/v4-1200px-Be-Good-at-Capoeira-Step-11-Version-2.jpg) center/cover no-repeat;
 
 	height: 400px;
 	border-radius: 15px;
 	box-shadow: 0 0 15px 5px #000;
 	margin: 30px;
+}
+
+.list li{
+	font-size: 30px;
+	margin-bottom: 40px;
+	background: url(https://cdn-icons-png.flaticon.com/512/5610/5610944.png) left top/50px no-repeat;
+	padding-left: 60px;
 }
