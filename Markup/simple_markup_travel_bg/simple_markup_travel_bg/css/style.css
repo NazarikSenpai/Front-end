@@ -102,20 +102,19 @@ body {
 
 .content-top {
 	margin: 0px auto;
+	text-align: center;
 }
 
 .content-top__category {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
-	text-align: center;
 	margin: 0px 0px 28px 0px;
 }
 
 .content-top__title {
 	font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
 	font-size: 36px;
-	text-align: center;
 	max-width: 721px;
 	margin: 28px auto 77px;
 	line-height: 50px;
