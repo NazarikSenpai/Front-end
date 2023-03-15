@@ -147,6 +147,6 @@ body {
 .list li{
 	font-size: 30px;
 	margin-bottom: 40px;
-	background: url(https://cdn-icons-png.flaticon.com/512/5610/5610944.png) left top/50px no-repeat;
+	background: url(https://cdn-icons-png.flaticon.com/512/5610/5610944.png) left 10px/50px no-repeat;
 	padding-left: 60px;
 }
