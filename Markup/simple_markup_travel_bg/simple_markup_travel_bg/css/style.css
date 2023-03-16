@@ -96,6 +96,7 @@ body {
 
 .content {
 	padding: 168px 0px 137px 0px;
+	width: 100%;
 	max-width: 841px;
 	margin: 0px auto;
 }
@@ -108,6 +109,9 @@ body {
 .content-top__category {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 14px;
+	color: #273d46;
+	letter-spacing: 2.8px;
+	opacity: 0.6;
 	text-transform: uppercase;
 	margin: 0px 0px 28px 0px;
 }
@@ -115,23 +119,86 @@ body {
 .content-top__title {
 	font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
 	font-size: 36px;
-	max-width: 721px;
+	color: #273d46;
 	margin: 28px auto 77px;
 	line-height: 50px;
+	max-width: 730px;
 }
 
 .content-image {
-	max-width: 841px;
+	box-shadow: 0 15px 65px rgba(15, 16, 16, 0.15);
+	border: 10px solid #ffffff;
+	margin: 77px auto 97px;
+	width: 100%;
 }
 
-.content-image__item {}
+.content-image__item img {
+	width: 100%;
+}
 
-.content-bottom {}
+.content-bottom {
+	max-width: 736px;
+	margin: 97px auto;
+}
 
-.content-bottom__text {}
+.content-bottom__text {
+	opacity: 0.8;
+	color: #273d46;
+	font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+	font-size: 24px;
+	line-height: 40px;
+	text-align: left;
+	margin: 97px auto 64px;
+}
 
-.content-bottom-info {}
+.content-bottom__text p {
+	margin: 55px auto;
+}
 
-.content-bottom-info-list {}
+.content-bottom-info {
+	margin: 64px 0px 0px 0px;
+}
 
-.content-bottom-info__link {}
+.content-bottom-info-list {
+	margin: 64px 0px 59px 0px;
+	padding: 0px 0px 0px 33px;
+	background:url(../img/icons/check_icon.jpg) left top repeat-y;
+}
+
+.content-bottom-info-list__li-black {
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	color: #273d46;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+	margin: 17px 0px;
+}
+
+.content-bottom-info-list__li-italic {
+	color: #80b7b3;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	margin: 17px 0px;
+}
+
+.content-bottom-info-list__li-bold {
+	color: #273d46;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 17px 0px;
+}
+
+.content-bottom-info-list__li-line-through {
+	opacity: 0.3;
+	color: #273d46;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+	text-decoration: line-through;
+	margin: 17px 0px;
+}
+
+
+.content-bottom-info__link {
+	background-color: #80b7b3;
+}
