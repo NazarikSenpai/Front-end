@@ -96,5 +96,55 @@ h6 {
 
 body {
 	padding: 30px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+.block {
+	border: 5px solid red;
+	max-width: 800px;
+	height: 800px;
+	margin: 30px auto;
+}
+
+.block div {
+	line-height: 50px;
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+}
+
+.block__1 {
+	background-color: lightcoral;
+}
+
+.block__2 {
+	background-color: lightblue;
+}
+
+.block__3 {
+	background-color: lightgreen;
+}
+
+body .block:nth-child(1) .block__1 {}
+
+body .block:nth-child(1) .block__2 {
+	position: relative;
+	top: 20px;/* приоритет */
+	bottom: 10px;
+	left: 30px;/* приоритет */
+	right: 10px;
+}
+
+body .block:nth-child(1) .block__3 {}
+
+body .block:nth-child(2) .block__1 {}
+
+body .block:nth-child(2) .block__2 {}
+
+body .block:nth-child(2) .block__3 {}
+
+body .block:nth-child(3) .block__1 {}
+
+body .block:nth-child(3) .block__2 {}
+
+body .block:nth-child(3) .block__3 {}
