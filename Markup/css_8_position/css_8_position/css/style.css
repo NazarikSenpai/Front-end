@@ -125,7 +125,9 @@ body {
 	background-color: lightgreen;
 }
 
-body .block:nth-child(1) .block__1 {}
+body .block:nth-child(1) .block__1 {
+	position: static;/* по-умолчанию */
+}
 
 body .block:nth-child(1) .block__2 {
 	position: relative;
