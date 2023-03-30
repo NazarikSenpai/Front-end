@@ -90,3 +90,37 @@ h6 {
 
 /* End of CSS reset */
 
+body {
+	padding: 30px;
+}
+
+.text {
+	font-size: 24px;
+	line-height: 33px;
+	margin: 0 0 30px 0;
+}
+
+.text::first-line {
+	font-weight: bold;
+	background-color: aqua;
+}
+
+.text::before {
+	content: '«';
+}
+
+.text::after {
+	content: '»';
+}
+
+.text::first-letter {
+	font-size: 30px;
+	color: red;
+}
+
+.list {}
+
+.list li {
+	font-size: 24px;
+	margin: 0 0 30px 0;
+}
