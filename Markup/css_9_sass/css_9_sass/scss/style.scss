@@ -1,8 +1,98 @@
-body{
-    padding: 30px;
+@import "_nullstyle.scss";
+
+/* body {
+    padding: 20px;
     font-size: 35px;
-    div{
+
+    div {
         text-align: center;
         font-size: 15px;
+
+        p {
+            color: brown;
+        }
+
+    }
+} */
+$fz1: 30px;
+$color-1: green;
+
+@mixin text-style($font-size: 14px, $text-color: #000, $hover-color: #6b6666) {
+    font-size: $font-size;
+    color: $text-color;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+%hover-template {
+    &:hover {
+        text-shadow: 0 0 2px;
+    }
+}
+
+.block--big {
+    font-size: 100px;
+}
+
+.block {
+    width: 144px / 300px * 100%;
+    height: 400px / 500px * 100%;
+    overflow-y: scroll;
+    background-color: #f8d9b7;
+    padding: 30px;
+    font-size: $fz1;
+    line-height: 35px;
+
+    >p {
+        color: green;
+    }
+
+    span {
+        color: red;
+        @extend %hover-template;
+    }
+
+    .block__text {
+        font-size: $fz1;
+        line-height: 55px;
+    }
+
+    &.block--big {
+        font-size: $fz1;
+    }
+}
+
+
+.link {
+    font-size: $fz1;
+    color: violet;
+
+    .block & {
+        color: blue;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+        position: relative;
+        bottom: 10px;
+        left: 50%;
+        font-size: 20px;
+    }
+}
+
+.mixinparagraph {
+    @include text-style(30px, #ff8400a3, #ff8400);
+}
+
+.link-2 {
+    font-size: $fz1+20px;
+
+    &:hover {
+        @extend .block--big;
     }
 }
