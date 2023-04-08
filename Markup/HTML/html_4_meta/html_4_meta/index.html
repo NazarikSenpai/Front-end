@@ -2,15 +2,93 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML 4 meta</title>
+
+  <!-- <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> -->
+  <!-- Кодування сторінки. З HTML5 можна записувати так -->
+  <meta charset="UTF-8">
+
+  <!--Настройка адаптивності-->
+  <!-- Фіксована ширина -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+  <!-- Адаптивність. Контент не міняє розмір, а адаптується -->
+  <!-- <meta name="viewport" content="width=device-width"> -->
+
+  <!-- Забороняє збільшувати на телефонах -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!-- На Apple відключає силку на номері -->
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Короткий опис змісту сторінки -->
+  <meta name="description" content="150 words">
+
+  <!-- Теги для SEO оптимізації
+  <meta name="keywords" content="your tags">
+
+  Заборона індексації сторінки
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="none">
+
+  Заборона індексації картинок
+  <meta name="robots" content="noimageindex, nofollow"> -->
+
+  <!-- Теги про автора сторінки і права -->
+  <meta name="Author" content="name email@gmail.com">
+  <meta name="Copyright" content="">
+  <meta name="Adress" content="1601 S California Ave" />
+
+
+  <!-- Перенаправлення у випадку коли виникла помилка 404, час у секундах -->
+  <meta http-equiv="refresh" content="6; url=index.html">
+
+  <!-- локализация сайта, для русскоязычного сайта ru_RU -->
+  <meta property="og:locale" content="ru_RU">
+  <!-- тип контента, по умолчанию используется article -->
+  <meta property="og:type" content="article">
+  <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+  <meta property="og:title" content="META теги">
+  <!-- описание страницы -->
+  <meta property="og:description" content="Описание страницы про META теги">
+  <!-- ссылка на изображение, которое будет публиковаться в записи -->
+  <meta property="og:image" content="http://fls.guru/meta/img/bg.jpg">
+  <!-- ссылка на текущую страницу -->
+  <meta property="og:url" content="http://fls.guru/meta/ ">
+  <!-- название сайта -->
+  <meta property="og:site_name" content="Фрилансер по жизни">
+
+  <!-- Тип карты, по умолчанию используется summary -->
+  <meta name="twitter:card" content="summary">
+  <!-- Имя/логин автора -->
+  <meta name="twitter:site" content="Жека">
+  <!-- Название страницы -->
+  <meta name="twitter:title" content="META теги">
+  <!-- Описание страницы -->
+  <meta name="twitter:description" content="про META теги">
+  <!-- Cсылка на изображение -->
+  <meta name="twitter:image" content="http://fls.guru/meta/img/bg.jpg">
+
   <link rel="stylesheet" href="css/style.css">
+  <!-- <meta name="" content="">
+  <meta http-equiv="" content="">
+  <meta property="" content=""> -->
+
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="">
+  <meta http-equiv="refresh" content="0; url=http://example.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 
 <body>
-  
+  <h1>В траве сидел кузнечик В траве сидел кузнечик В траве сидел кузнечик</h1>
+  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit!</h2>
+  <p class="phone">
+    +380662477693
+  </p>
 </body>
 
 </html>
