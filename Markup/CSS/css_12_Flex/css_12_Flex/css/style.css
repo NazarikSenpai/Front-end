@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+  height: 100%;
+  width: 100%;
+  font-style: 100%;
+  line-height: 1;
+  font-style: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+/*Убирает крестик у текстового поля в IE. сейчас бесполезно потому, что explorer прекратил свою работу*/
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* убирает лишние отступы в кнопке в mozzila firefox */
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+/* End of CSS reset */
+@font-face {
+  font-family: "PFDinTextCondPro-Bold";
+  src: url(../fonts/PFDinTextCondPro-Bold.eot);
+  src: url(../fonts/PFDinTextCondPro-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/PFDinTextCondPro-Bold.woff2) format("woff2"), url(../fonts/PFDinTextCondPro-Bold.woff) format("woff"), url(../fonts/PFDinTextCondPro-Bold.ttf) format("truetype"), url(../fonts/PFDinTextCondPro-Bold.svg#PFDinTextCondPro-Bold) format("svg"), url(../fonts/PFDinTextCondPro-Bold.otf) format("otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "PFDinTextCondPro-Regular";
+  src: url(../fonts/pfdintextcondpro-regular.eot);
+  src: url(../fonts/pfdintextcondpro-regular.eot?#iefix) format("embedded-opentype"), url(../fonts/pfdintextcondpro-regular.otf) format("otf"), url(../fonts/pfdintextcondpro-regular.svg#pfdintextcondpro-regular) format("svg"), url(../fonts/pfdintextcondpro-regular.ttf) format("truetype"), url(../fonts/pfdintextcondpro-regular.woff) format("woff"), url(../fonts/pfdintextcondpro-regular.woff2) format("woff2");
+  font-weight: normal;
+}
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.block {
+  text-align: center;
+}
+.block__row {
+  border: 20px solid #ece89d;
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.block__column {
+  border: 20px solid #5e5373;
+}
+.block__item {
+  background-color: #18b5a4;
+  padding: 40px;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+}
