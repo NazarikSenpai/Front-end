@@ -21,10 +21,12 @@
 //   );
 let ask = (question, yes, no) => {
     return confirm(question) ? yes() : no();
-}
+};
 
 ask(
     "Are you agree?",
     () => alert("You agreed"),      //lol, this works =D
     () => alert("You desagreed")
 )
+
+console.log('Hi there');
