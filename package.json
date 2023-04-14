@@ -1,0 +1,22 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazarikSenpai/Front-end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NazarikSenpai/Front-end/issues"
+  },
+  "homepage": "https://github.com/NazarikSenpai/Front-end#readme",
+  "devDependencies": {
+    "eslint": "^8.38.0"
+  }
+}

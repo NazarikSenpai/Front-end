@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 let today = new Date();
 function printToConsole() {
     console.log('Hi, there!');
