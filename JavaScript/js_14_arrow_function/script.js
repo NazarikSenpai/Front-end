@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 // let summ = (firstNumber, secondNumber) => firstNumber + secondNumber;
 
 // console.log(summ(23, 32));
@@ -27,6 +27,6 @@ ask(
   "Are you agree?",
   () => alert("You agreed"),      //lol, this works =D
   () => alert("You desagreed")
-)
+);
 
-console.log('Hi there');
+console.log("Hi there");
