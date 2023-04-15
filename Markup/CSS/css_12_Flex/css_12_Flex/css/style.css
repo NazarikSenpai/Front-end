@@ -1,96 +1,5 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-:focus,
-:active {
-  outline: none;
-}
-
-a:focus,
-a:active {
-  outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-
-html,
-body {
-  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
-  height: 100%;
-  width: 100%;
-  font-style: 100%;
-  line-height: 1;
-  font-style: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-/*Убирает крестик у текстового поля в IE. сейчас бесполезно потому, что explorer прекратил свою работу*/
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-/* убирает лишние отступы в кнопке в mozzila firefox */
-a,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-style: inherit;
-  font-weight: 400;
-}
-
-/* End of CSS reset */
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 @font-face {
   font-family: "PFDinTextCondPro-Bold";
   src: url(../fonts/PFDinTextCondPro-Bold.eot);
@@ -111,15 +20,13 @@ body {
   text-align: center;
 }
 .block__row {
+  height: 1000px;
   border: 20px solid #ece89d;
   margin: 0px 0px 20px 0px;
   display: flex;
   justify-content: flex-start;
-  align-items: stretch;
-  flex-wrap: wrap;
-}
-.block__column {
-  border: 20px solid #5e5373;
+  flex-flow: row wrap;
+  align-items: center;
 }
 .block__item {
   background-color: #18b5a4;
@@ -127,4 +34,20 @@ body {
   font-size: 50px;
   color: #fff;
   font-weight: 700;
+}
+.block__column {
+  border: 20px solid #5e5373;
+}
+.block__column:nth-child(3n+1) {
+  align-self: flex-start;
+  order: 1;
+  flex: 1 1 300px;
+}
+.block__column:nth-child(3n+2) {
+  align-self: center;
+  order: 2;
+}
+.block__column:nth-child(3n+3) {
+  align-self: flex-end;
+  order: 3;
 }
