@@ -10,9 +10,9 @@ let ladder = {
     return this;
   },
   showStep: function() { // показує поточний крок
-    alert(this.step);
+    console.log(this.step);
     return this;
   }
 };
 
-this
+ladder.up().down().down().down().down().showStep();
