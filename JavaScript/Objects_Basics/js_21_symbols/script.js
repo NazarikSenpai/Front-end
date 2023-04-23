@@ -84,7 +84,10 @@ let toPrimitive = Symbol.toPrimitive;
 user[toPrimitive] = 123;
 console.log(user[toPrimitive]);
 
-let car = {};
+let car = {
+  brand: "BMW",
+  weight:"1000kg",
+};
 let sym = Symbol.for("id");
 car[sym] = 123;
 console.log(car[sym]);
@@ -93,3 +96,4 @@ let symClone = Symbol.for("id");
 console.log(car[symClone]);
 
 console.log(Object.getOwnPropertySymbols(car));//повертає масив з усіма символами об'єкта
+console.log(Reflect.ownKeys(car));//повертає ВСІ ключі об'єкта
