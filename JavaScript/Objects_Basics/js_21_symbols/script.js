@@ -91,3 +91,5 @@ console.log(car[sym]);
 
 let symClone = Symbol.for("id");
 console.log(car[symClone]);
+
+console.log(Object.getOwnPropertySymbols(car));//повертає масив з усіма символами об'єкта
