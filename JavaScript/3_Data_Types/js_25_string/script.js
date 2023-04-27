@@ -3,20 +3,20 @@
 
 /* Лапки */
 
-// let guestList = `Guests:
-// Lana,
-// Zoe,
-// Zoro,
-// Sanji`;//зворотні лапки можуть зберігати декілька строк
+/* let guestList = `Guests:
+Lana,
+Zoe,
+Zoro,
+Sanji`;//зворотні лапки можуть зберігати декілька строк
 
-// console.log(guestList);
+console.log(guestList);
 
-// У цьому коді виникне помилка, бо таке працює тільки з backquotes
-// let guestListInDoubleQuotes = "Guests:
-// *Lana,
-// *Zoe,
-// Zoro,
-//   Sanji";
+У цьому коді виникне помилка, бо таке працює тільки з backquotes
+let guestListInDoubleQuotes = "Guests:
+*Lana,
+*Zoe,
+Zoro,
+  Sanji"; */
 
 /* Спецсимволи */
 
