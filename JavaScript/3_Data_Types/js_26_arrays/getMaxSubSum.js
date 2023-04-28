@@ -1,8 +1,17 @@
 "use strict";
 
-console.log(getMaxSubSum([100, -9, 2, -3, 5]));
+console.log(getMaxSubSum([-3, -9, 15, 3, 5]));
 
-function getMaxSubSum(numbers) {
+function getMaxSubSum(arr) {//коротке рішення з коментів
+  let bestSum = 0, currentSum = 0;
+  for (let item of arr) {
+    currentSum = Math.max(0, currentSum + item);
+    bestSum = Math.max(currentSum, bestSum);
+  }
+  return bestSum;
+}
+
+/* function getMaxSubSum(numbers) {
   
   let currentSum = 0;
   let maxSubSum = 0;
@@ -14,7 +23,7 @@ function getMaxSubSum(numbers) {
   }
 
   return maxSubSum;
-}
+} */
 
 /* function getMaxSubSum(numbers) { // O(n^2)
   
