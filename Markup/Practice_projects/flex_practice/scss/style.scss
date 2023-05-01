@@ -1,0 +1,87 @@
+@import "_nullstyle.scss";
+
+$gray-background: #445162;
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+
+}
+
+.motivation {
+
+  &-block {
+    display: flex;
+    background-color: #445162;
+    padding: 50px;
+    justify-content: space-between;
+  }
+
+  &-block__text {
+
+    h1 {
+      color: #fff;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 60px;
+    }
+
+    ul{
+      margin: 40px 0px 0px 0px;
+    }
+
+    li {
+      color: #fff;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 20px;
+      margin: 0px 0px 16px 0px;
+
+      &::before{
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 19px;
+        background: url(../img/check_icon.png);
+      }
+    }
+  }
+
+  &-block__img {}
+}
+
+.basics {
+  &-block {}
+
+  &-block__img {}
+
+  &-block__text {}
+}
+
+.descrition {
+  &-block {}
+}
+
+.description {
+  &-block__element {}
+
+  &-block__img {}
+
+  &-block__title {}
+}
+
+.thank {
+  &-block {}
+
+  &-block__element {}
+
+  &-block__happy {}
+
+  &-block__happy-for {}
+
+  &-block__text {}
+
+  &-block__button {}
+}
+
+.footer{
+  
+}
