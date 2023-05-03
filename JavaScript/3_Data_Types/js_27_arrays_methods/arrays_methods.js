@@ -116,9 +116,9 @@ console.log(numValues.sort());//Сортування відбулося з пе�
 console.log(numValues);
 
 function numCompare(a, b) {
-  if (a > b) return 1;
+  if (a < b) return 1;
   if (a == b) return 0;
-  if (a < b) return -1;
+  if (a > b) return -1;
 }
 
 console.log(numValues.sort(numCompare));//тепер сортування відбулося правильно
@@ -133,3 +133,70 @@ names.sort((a, b) => a.localeCompare(b));//Краще робити так зі �
 console.log(names);
 
 console.log(names.sort()); */
+
+/* reverse */
+
+/* let numValues = [3, 24, 5, 45, 10, 6, 3, 2];
+numValues.sort((a, b) => a - b);
+console.log(numValues);
+
+console.log(numValues.reverse());//розвертає масив елементів в зворотньому порядку
+
+console.log(numValues); */
+
+/* split та join */
+
+/* let namesInput = "Alex, Olga, Vadim, Olexandr, Stepan";
+let namesArr = namesInput.split(", ", 3);
+console.log("namesArr:", namesArr);
+
+let namesLetters = namesInput.split("");
+console.log("namesLetters:", namesLetters);
+
+let users = ["Jonathan", "Anisim", "Nika", "Nazariy", "Vlad"];
+let userNames = users.join(" | ");
+console.log("userNames:", userNames); */
+
+/* reduse та reduseRight */
+
+/* let users = ["Jonathan", "Anisim", "Nika", "Nazariy", "Vlad"];
+
+let longNamesCount = users.reduceRight((count, name) => count + (name.length > 4 ? 1 : 0), 0);//до кожного елементу викликає функ, акумулятор берется з інітіал(якщо не заданий, то береться перший елемент масиву) або з результату роботи минулої функ. reduseRight проходиться справа наліво
+console.log(longNamesCount);
+
+let emptyArr = [];
+//console.log(emptyArr.reduce((accum, item) => accum + item));//видає помилку бо масив пустий і інітіал не заданий TypeError: Reduce of empty array with no initial value */
+
+/* Array.isArray */
+
+/* console.log(typeof []);
+
+console.log(Array.isArray([]));//повертає true якщо value це масив
+console.log(Array.isArray({})); */
+
+/* thisArg */
+
+/* let appleCompany = {
+  minAge: 18,
+  maxAge: 99,
+  degree: "Bachelor",
+  canJoin(employee) {
+    return employee.degree == this.degree && employee.age <= this.maxAge && employee.age >= this.minAge;
+  },
+};
+
+let candidates = [
+  { name: "JoJo", age: 30, degree: "Basic" },
+  { name: "Cris", age: 17, degree: "Bachelor" },
+  { name: "Anna", age: 100, degree: "Bachelor" },
+  { name: "Matthew", age: 27, degree: "Bachelor" },
+  { name: "Gorge", age: 30, degree: "Bachelor" },
+];
+
+console.log(candidates.filter(appleCompany.canJoin, appleCompany));//thisArg тут для того щоб ключове слово this правильно викликалося і не видавало undefined
+
+let someArr = new Array(10);
+someArr.fill("bla");//заповнює масив однаковими елементами
+console.log(someArr); */
+
+
