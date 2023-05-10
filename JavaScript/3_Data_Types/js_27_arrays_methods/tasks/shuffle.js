@@ -10,7 +10,7 @@ function shuffle(arr) {
   let length = arr.length;
 
   for (let index = 0; index < length; index++) {
-    shuffledArr[index] = arr.splice(Math.floor(Math.random() * (arr.length - 1)), 1)[0];
+    shuffledArr[index] = arr.splice(Math.floor(Math.random() * arr.length), 1)[0];
   }
 
   shuffledArr.forEach(element => arr.push(element));
