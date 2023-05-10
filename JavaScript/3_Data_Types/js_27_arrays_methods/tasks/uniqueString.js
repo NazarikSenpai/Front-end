@@ -1,13 +1,18 @@
 "use strict";
 
 function uniqueString(strings) {
-  let uniqueStrings = [];
+  let uniqueStrings = {};
 
-  for (let str of strings) {//більш лаконічний варіант з рішення
+  strings.forEach(str => {//Ще більш ефективний і лаконічний варіант з коментарів
+    uniqueStrings[str] = 0;
+  });
+  
+  
+  /* for (let str of strings) {//більш лаконічний варіант з рішення
     if (!uniqueStrings.includes(str)) {
       uniqueStrings.push(str);
     }
-  }
+  } */
   
   /* strings.forEach(str => { // мій перший громісткий варіант
     for (let uniqueStr of uniqueStrings) {
@@ -16,7 +21,7 @@ function uniqueString(strings) {
     uniqueStrings.push(str);
   }); */
 
-  return uniqueStrings;
+  return Object.keys(uniqueStrings);
 }
 
 

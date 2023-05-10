@@ -19,9 +19,11 @@ console.log(testArr);
 //   }
 // }
 function filterRangeInPlace(arr, a, b) {
-  for (let index = arr.length; index >= 0; index--) {//змінив порядок на справа наліво і вийшло на одну строку менше
+  /* for (let index = arr.length; index >= 0; index--) {//змінив порядок на справа наліво і вийшло на одну строку менше
     if (arr[index] < a || arr[index] > b) {
       arr.splice(index, 1);
     }
-  }
+  } */
+
+  return arr.splice(0, arr.length, ...arr.filter(num => !(num < a || num > b)));//лаконічний варіант з коментів
 }
