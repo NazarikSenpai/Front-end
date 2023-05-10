@@ -3,12 +3,18 @@
 function uniqueString(strings) {
   let uniqueStrings = [];
 
-  strings.forEach(str => {
+  for (let str of strings) {//більш лаконічний варіант з рішення
+    if (!uniqueStrings.includes(str)) {
+      uniqueStrings.push(str);
+    }
+  }
+  
+  /* strings.forEach(str => { // мій перший громісткий варіант
     for (let uniqueStr of uniqueStrings) {
       if (uniqueStr === str) { return; }
     }
     uniqueStrings.push(str);
-  });
+  }); */
 
   return uniqueStrings;
 }
