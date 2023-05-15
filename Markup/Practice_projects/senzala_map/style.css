@@ -114,7 +114,7 @@ body {
 }
 
 .popup-image {
-  width: 160px;
+  width: 200px;
   align-self: center;
 }
 
@@ -135,13 +135,17 @@ body {
   color: gray;
 }
 
-.info-item:hover {
+.info-item a:hover {
   filter: opacity(70%);
   text-decoration: underline;
 }
 
 .info-item a span {
   font-size: 15px;
+}
+
+.info-item a{
+  width: fit-content;
 }
 
 .popup-social {
