@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/NazarikSenpai/Front-end/issues"
   },
-  "homepage": "https://github.com/NazarikSenpai/Front-end#readme"
+  "homepage": "https://github.com/NazarikSenpai/Front-end#readme",
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0"
+  }
 }
