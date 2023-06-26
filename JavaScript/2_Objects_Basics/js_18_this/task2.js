@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 let ladder = {
   step: 0,
   up() {
@@ -9,10 +9,11 @@ let ladder = {
     this.step--;
     return this;
   },
-  showStep: function() { // показує поточний крок
+  showStep: function () {
+    // показує поточний крок
     console.log(this.step);
     return this;
-  }
+  },
 };
 
 ladder.up().down().down().down().down().showStep();

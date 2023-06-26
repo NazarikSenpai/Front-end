@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-"use strict";
+'use strict';
 
 /* Символи */
 
@@ -7,7 +7,7 @@
 // let symbol2 = Symbol("id");
 // console.log(symbol1 == symbol2);
 // //alert(symbol1); - Cannot convert a Symbol value to a string
- 
+
 // console.log(toString(symbol1));
 // console.log(symbol1.description);
 
@@ -85,15 +85,15 @@ user[toPrimitive] = 123;
 console.log(user[toPrimitive]);
 
 let car = {
-  brand: "BMW",
-  weight:"1000kg",
+  brand: 'BMW',
+  weight: '1000kg',
 };
-let sym = Symbol.for("id");
+let sym = Symbol.for('id');
 car[sym] = 123;
 console.log(car[sym]);
 
-let symClone = Symbol.for("id");
+let symClone = Symbol.for('id');
 console.log(car[symClone]);
 
-console.log(Object.getOwnPropertySymbols(car));//повертає масив з усіма символами об'єкта
-console.log(Reflect.ownKeys(car));//повертає ВСІ ключі об'єкта
+console.log(Object.getOwnPropertySymbols(car)); //повертає масив з усіма символами об'єкта
+console.log(Reflect.ownKeys(car)); //повертає ВСІ ключі об'єкта

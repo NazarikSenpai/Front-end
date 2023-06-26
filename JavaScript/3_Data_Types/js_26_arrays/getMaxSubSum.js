@@ -1,9 +1,11 @@
-"use strict";
+'use strict';
 
 console.log(getMaxSubSum([-3, -9, 15, 3, 5]));
 
-function getMaxSubSum(arr) {//коротке рішення з коментів
-  let bestSum = 0, currentSum = 0;
+function getMaxSubSum(arr) {
+  //коротке рішення з коментів
+  let bestSum = 0,
+    currentSum = 0;
   for (let item of arr) {
     currentSum = Math.max(0, currentSum + item);
     bestSum = Math.max(currentSum, bestSum);

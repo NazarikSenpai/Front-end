@@ -1,14 +1,15 @@
-"use strict";
+'use strict';
 
-let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+let arr = ['nap', 'teachers', 'cheaters', 'PAN', 'ear', 'era', 'hectares'];
 
 console.log(aclean(arr));
 
 function aclean(arr) {
   let uniques = new Map();
-  
-  for (let str of arr) {//дивний варіант з рішення, бо можна мап замінити об'єктом
-    uniques.set(str.toLowerCase().split("").sort().join(""), str);
+
+  for (let str of arr) {
+    //дивний варіант з рішення, бо можна мап замінити об'єктом
+    uniques.set(str.toLowerCase().split('').sort().join(''), str);
   }
 
   return Array.from(uniques.values());

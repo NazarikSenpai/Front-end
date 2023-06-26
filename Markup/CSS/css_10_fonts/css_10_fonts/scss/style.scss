@@ -1,58 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-@import "_nullstyle.scss";
+@import '_nullstyle.scss';
 
 @font-face {
-    font-family: 'PFDinTextCondPro-Bold';
-    src: url(../fonts/PFDinTextCondPro-Bold.eot);
-    src: url(../fonts/PFDinTextCondPro-Bold.eot?#iefix) format('embedded-opentype'),
-        url(../fonts/PFDinTextCondPro-Bold.woff2) format('woff2'),
-        url(../fonts/PFDinTextCondPro-Bold.woff) format('woff'),
-        url(../fonts/PFDinTextCondPro-Bold.ttf) format('truetype'),
-        url(../fonts/PFDinTextCondPro-Bold.svg#PFDinTextCondPro-Bold) format('svg'),
-        url(../fonts/PFDinTextCondPro-Bold.otf) format('otf');
-        font-weight: bold;
+  font-family: 'PFDinTextCondPro-Bold';
+  src: url(../fonts/PFDinTextCondPro-Bold.eot);
+  src: url(../fonts/PFDinTextCondPro-Bold.eot?#iefix)
+      format('embedded-opentype'),
+    url(../fonts/PFDinTextCondPro-Bold.woff2) format('woff2'),
+    url(../fonts/PFDinTextCondPro-Bold.woff) format('woff'),
+    url(../fonts/PFDinTextCondPro-Bold.ttf) format('truetype'),
+    url(../fonts/PFDinTextCondPro-Bold.svg#PFDinTextCondPro-Bold) format('svg'),
+    url(../fonts/PFDinTextCondPro-Bold.otf) format('otf');
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: 'PFDinTextCondPro-Regular';
-    src: url(../fonts/pfdintextcondpro-regular.eot);
-    src: url(../fonts/pfdintextcondpro-regular.eot?#iefix) format('embedded-opentype'),
-        url(../fonts/pfdintextcondpro-regular.otf) format('otf'),
-        url(../fonts/pfdintextcondpro-regular.svg#pfdintextcondpro-regular) format('svg'),
-        url(../fonts/pfdintextcondpro-regular.ttf) format('truetype'),
-        url(../fonts/pfdintextcondpro-regular.woff) format('woff'),
-        url(../fonts/pfdintextcondpro-regular.woff2) format('woff2');
-    font-weight: normal;
+  font-family: 'PFDinTextCondPro-Regular';
+  src: url(../fonts/pfdintextcondpro-regular.eot);
+  src: url(../fonts/pfdintextcondpro-regular.eot?#iefix)
+      format('embedded-opentype'),
+    url(../fonts/pfdintextcondpro-regular.otf) format('otf'),
+    url(../fonts/pfdintextcondpro-regular.svg#pfdintextcondpro-regular)
+      format('svg'),
+    url(../fonts/pfdintextcondpro-regular.ttf) format('truetype'),
+    url(../fonts/pfdintextcondpro-regular.woff) format('woff'),
+    url(../fonts/pfdintextcondpro-regular.woff2) format('woff2');
+  font-weight: normal;
 }
 
 %p-template {
-    font-size: 30px;
-    line-height: 35px;
+  font-size: 30px;
+  line-height: 35px;
 
-    p {
-        margin: 0px 0px 35px 0px;
-    }
+  p {
+    margin: 0px 0px 35px 0px;
+  }
 }
 
 .text-PFDin-Regular {
-    @extend %p-template;
-    font-family: "PFDinTextCondPro-Regular";
-    background-color: #9b9b9b;
+  @extend %p-template;
+  font-family: 'PFDinTextCondPro-Regular';
+  background-color: #9b9b9b;
 }
 
 .text-PFDin-Bold {
-    @extend %p-template;
-    font-family: "PFDinTextCondPro-Bold";
+  @extend %p-template;
+  font-family: 'PFDinTextCondPro-Bold';
 }
 
 .text-basic {
-    @extend %p-template;
-    background-color: #9b9b9b;
+  @extend %p-template;
+  background-color: #9b9b9b;
 }
 
 .text {
-
-    font-family: "PT Sans";
-    font-weight: bold;
-    @extend %p-template;
+  font-family: 'PT Sans';
+  font-weight: bold;
+  @extend %p-template;
 }

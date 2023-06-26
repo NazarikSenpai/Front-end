@@ -2,7 +2,7 @@
 /* eslint-disable use-isnan */
 /* eslint-disable no-compare-neg-zero */
 /* eslint-disable no-loss-of-precision */
-"use strict";
+'use strict';
 
 /* Способи запису числа */
 
@@ -99,7 +99,6 @@ console.log(Math.min(Math.random(), Math.random(), Math.random(), Math.random(),
 console.log(Math.pow(4,6)); */
 
 /* Task */
- 
 
 /* let inputNumbers = {
   firstNum: 0,
@@ -112,8 +111,8 @@ alert(`Сума ваших чисел: ${objSum(inputNumbers)}`); */
 alert(`Число: ${readNumber()}`);
 
 function numberPrompt() {
-  this["firstNum"] = +prompt("Введіть перше число:");
-  this["secondNum"] = +prompt("Введіть друге число:");
+  this['firstNum'] = +prompt('Введіть перше число:');
+  this['secondNum'] = +prompt('Введіть друге число:');
   return this;
 }
 
@@ -125,10 +124,10 @@ function readNumber() {
   let inputNumber;
 
   do {
-    inputNumber = prompt("Введіть число:");
+    inputNumber = prompt('Введіть число:');
   } while (!isFinite(inputNumber));
 
-  if (inputNumber === null || inputNumber === "") {
+  if (inputNumber === null || inputNumber === '') {
     return null;
   }
 

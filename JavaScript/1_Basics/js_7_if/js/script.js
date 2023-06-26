@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 // let age = prompt("How old are you?", '');
 // let isAdult = (age >= 18);
 // // if (isAdult) {

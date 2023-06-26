@@ -1,9 +1,9 @@
-"use strict";
+'use strict';
 
 let testArr = [];
 
 for (let index = 0; index < 20; index++) {
-  testArr[index] = Math.floor((Math.random() * 101));
+  testArr[index] = Math.floor(Math.random() * 101);
 }
 
 console.log(testArr);
@@ -25,5 +25,9 @@ function filterRangeInPlace(arr, a, b) {
     }
   } */
 
-  return arr.splice(0, arr.length, ...arr.filter(num => !(num < a || num > b)));//лаконічний варіант з коментів
+  return arr.splice(
+    0,
+    arr.length,
+    ...arr.filter((num) => !(num < a || num > b))
+  ); //лаконічний варіант з коментів
 }

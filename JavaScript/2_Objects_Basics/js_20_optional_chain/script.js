@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-"use strict";
+'use strict';
 
 // /* Проблема відсутньої властивості */
 // let user = {
@@ -26,7 +26,7 @@
 //   this.number += number;
 // }
 // properties?.addOne(number++);//Виконання не дійде до функції через опціональний ланцюжок
-// console.log(number);          
+// console.log(number);
 
 // /* Застосування з методами та квадратними дужками ?.() ?.[] */
 // let sportcar = {
@@ -54,8 +54,8 @@
 
 let tripInfo = {
   destination: {
-    country:prompt("Введіть країну призначення:"),
-  }
+    country: prompt('Введіть країну призначення:'),
+  },
 };
 
 // tripInfo.destination.country = prompt("Введіть країну призначення:");

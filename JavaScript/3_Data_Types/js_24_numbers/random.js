@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
-"use strict";
+'use strict';
 
-function random(min,max) {
+function random(min, max) {
   let result;
   do {
     result = Math.random() * max;
@@ -9,7 +9,7 @@ function random(min,max) {
   return result;
 }
 
-function random2(min,max) {
+function random2(min, max) {
   return min + Math.random() * (max - min);
 }
 

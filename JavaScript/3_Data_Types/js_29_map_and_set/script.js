@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-"use strict";
+'use strict';
 
 /* Map */
 
@@ -86,17 +86,17 @@ user.forEach((prop, key) => console.log(prop, " = ", key));//працює так
 let cars = new Set();
 
 let hisCar = {
-  brand: "Mitsubishi",
+  brand: 'Mitsubishi',
   year: 2003,
 };
 
 let myCar = {
-  brand: "Renault",
+  brand: 'Renault',
   year: 2013,
 };
 
 let herCar = {
-  brand: "Subaru",
+  brand: 'Subaru',
   year: 2017,
 };
 
@@ -108,7 +108,7 @@ cars.add(hisCar);
 
 console.log(cars);
 
-cars.forEach(value => console.log(value));
+cars.forEach((value) => console.log(value));
 for (let key of cars) {
-  console.log("car: ", key);
+  console.log('car: ', key);
 }

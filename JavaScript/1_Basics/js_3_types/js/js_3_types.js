@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* let NaNVar = NaN;//NaN type
 console.log(typeof (NaNVar));
 
@@ -24,4 +24,4 @@ console.log(variable);
 let symbolId = Symbol("id");//symbol type
 console.log("type of symbolId:", typeof symbolId); */
 
-alert("type of alert:", typeof(alert));
+alert('type of alert:', typeof alert);

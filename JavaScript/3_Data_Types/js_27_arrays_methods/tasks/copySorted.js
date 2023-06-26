@@ -1,11 +1,9 @@
-"use strict";
+'use strict';
 
-let arr = ["HTML", "JavaScript", "CSS"];
+let arr = ['HTML', 'JavaScript', 'CSS'];
 console.log(arr);
 console.log(copySorted(arr));
 console.log(arr);
-
-
 
 function copySorted(arr) {
   return arr.slice().sort();

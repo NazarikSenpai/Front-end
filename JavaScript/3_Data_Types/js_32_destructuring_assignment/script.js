@@ -33,12 +33,13 @@ console.log(currentUser); */
 
 /* rest and default parameters */
 
-let [firstThing, secondThing, ...rest] = "Hello, my friends. Nice to meet you".split(" ");
+let [firstThing, secondThing, ...rest] =
+  'Hello, my friends. Nice to meet you'.split(' ');
 
 console.log(firstThing);
 console.log(secondThing);
 console.log(rest);
 
-let [name = "name", surname = "surname"] = ["Nazariy"];
+let [name = 'name', surname = 'surname'] = ['Nazariy'];
 console.log(name);
 console.log(surname);

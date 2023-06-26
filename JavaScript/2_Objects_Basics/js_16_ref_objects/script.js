@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-"use strict";
-var _ = require("../../../node_modules/lodash");
+'use strict';
+var _ = require('../../../node_modules/lodash');
 // let message = "Hello";
 // let phrase = message;
 // console.log(phrase);
@@ -25,7 +25,7 @@ var _ = require("../../../node_modules/lodash");
 //   canOpenDoor: true,
 //   canOpenTrunk: true,
 //   canDriveAtNight: true,
-  
+
 // };
 
 // // for (let key in permissions) {
@@ -41,7 +41,7 @@ var _ = require("../../../node_modules/lodash");
 // console.log("carClone =", carClone);
 
 let user = {
-  name: "Nazariy",
+  name: 'Nazariy',
   age: 19,
   sizes: {
     weight: 50,
@@ -50,7 +50,7 @@ let user = {
       perimeter: 200,
       area: 10000,
     },
-  }
+  },
 };
 
 let cloneUser = deepClone(user);
@@ -60,13 +60,11 @@ function deepClone(object) {
   let result = {};
 
   for (let key in object) {
-
-    if (typeof object[key] === "object") {
+    if (typeof object[key] === 'object') {
       result[key] = deepClone(object[key]);
     } else {
       result[key] = object[key];
     }
-
   }
 
   return result;

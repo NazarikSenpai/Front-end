@@ -2,9 +2,9 @@
   font-family: 'PFDinTextCondPro-Bold';
   src: url(./PFDinTextCondPro-Bold.eot);
   src: url(./PFDinTextCondPro-Bold.eot?#iefix) format('embedded-opentype'),
-       url(./PFDinTextCondPro-Bold.woff2) format('woff2'),
-       url(./PFDinTextCondPro-Bold.woff) format('woff'),
-       url(./PFDinTextCondPro-Bold.ttf) format('truetype'),
-       url(./PFDinTextCondPro-Bold.svg#PFDinTextCondPro-Bold) format('svg'),
-       url(./PFDinTextCondPro-Bold.otf) format('otf');
+    url(./PFDinTextCondPro-Bold.woff2) format('woff2'),
+    url(./PFDinTextCondPro-Bold.woff) format('woff'),
+    url(./PFDinTextCondPro-Bold.ttf) format('truetype'),
+    url(./PFDinTextCondPro-Bold.svg#PFDinTextCondPro-Bold) format('svg'),
+    url(./PFDinTextCondPro-Bold.otf) format('otf');
 }

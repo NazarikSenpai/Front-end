@@ -1,9 +1,14 @@
-"use strict";
+'use strict';
 
-console.log(camelize("-webkit-transition"));
+console.log(camelize('-webkit-transition'));
 
 function camelize(words) {
-  return words.split("-").map((word, index) => index == 0 ? word : word.at(0).toUpperCase() + word.slice(1)).join("");
+  return words
+    .split('-')
+    .map((word, index) =>
+      index == 0 ? word : word.at(0).toUpperCase() + word.slice(1)
+    )
+    .join('');
 
   /* //Моє рішення
   let arrOfWords = word.split("");

@@ -1,146 +1,154 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-@import "_nullstyle.scss";
+@import '_nullstyle.scss';
 
 @font-face {
-    font-family: 'PFDinTextCondPro-Bold';
-    src: url(../fonts/PFDinTextCondPro-Bold.eot);
-    src: url(../fonts/PFDinTextCondPro-Bold.eot?#iefix) format('embedded-opentype'),
-        url(../fonts/PFDinTextCondPro-Bold.woff2) format('woff2'),
-        url(../fonts/PFDinTextCondPro-Bold.woff) format('woff'),
-        url(../fonts/PFDinTextCondPro-Bold.ttf) format('truetype'),
-        url(../fonts/PFDinTextCondPro-Bold.svg#PFDinTextCondPro-Bold) format('svg'),
-        url(../fonts/PFDinTextCondPro-Bold.otf) format('otf');
-    font-weight: bold;
+  font-family: 'PFDinTextCondPro-Bold';
+  src: url(../fonts/PFDinTextCondPro-Bold.eot);
+  src: url(../fonts/PFDinTextCondPro-Bold.eot?#iefix)
+      format('embedded-opentype'),
+    url(../fonts/PFDinTextCondPro-Bold.woff2) format('woff2'),
+    url(../fonts/PFDinTextCondPro-Bold.woff) format('woff'),
+    url(../fonts/PFDinTextCondPro-Bold.ttf) format('truetype'),
+    url(../fonts/PFDinTextCondPro-Bold.svg#PFDinTextCondPro-Bold) format('svg'),
+    url(../fonts/PFDinTextCondPro-Bold.otf) format('otf');
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: 'PFDinTextCondPro-Regular';
-    src: url(../fonts/pfdintextcondpro-regular.eot);
-    src: url(../fonts/pfdintextcondpro-regular.eot?#iefix) format('embedded-opentype'),
-        url(../fonts/pfdintextcondpro-regular.otf) format('otf'),
-        url(../fonts/pfdintextcondpro-regular.svg#pfdintextcondpro-regular) format('svg'),
-        url(../fonts/pfdintextcondpro-regular.ttf) format('truetype'),
-        url(../fonts/pfdintextcondpro-regular.woff) format('woff'),
-        url(../fonts/pfdintextcondpro-regular.woff2) format('woff2');
-    font-weight: normal;
+  font-family: 'PFDinTextCondPro-Regular';
+  src: url(../fonts/pfdintextcondpro-regular.eot);
+  src: url(../fonts/pfdintextcondpro-regular.eot?#iefix)
+      format('embedded-opentype'),
+    url(../fonts/pfdintextcondpro-regular.otf) format('otf'),
+    url(../fonts/pfdintextcondpro-regular.svg#pfdintextcondpro-regular)
+      format('svg'),
+    url(../fonts/pfdintextcondpro-regular.ttf) format('truetype'),
+    url(../fonts/pfdintextcondpro-regular.woff) format('woff'),
+    url(../fonts/pfdintextcondpro-regular.woff2) format('woff2');
+  font-weight: normal;
 }
 
 $color-gray: #868585;
 
 %p-template {
-    font-size: 30px;
-    line-height: 35px;
+  font-size: 30px;
+  line-height: 35px;
 
-    p {
-        margin: 0px 0px 35px 0px;
-    }
+  p {
+    margin: 0px 0px 35px 0px;
+  }
 }
 
 .title-header {
-    height: 100px;
-    width: 100%;
-    background: url(../img/man_photo.jpg) 0 center/cover no-repeat;
+  height: 100px;
+  width: 100%;
+  background: url(../img/man_photo.jpg) 0 center/cover no-repeat;
 }
 
-.serch-form {}
+.serch-form {
+}
 
 .menu {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 40px;
-    text-align: center;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 40px;
+  text-align: center;
 }
 
 .menu__link {
-    display: inline-block;
-    margin: 10px;
+  display: inline-block;
+  margin: 10px;
 }
 
 body {
-    font-family: "Lato";
+  font-family: 'Lato';
 }
 
 .title {
-    font-size: 34px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
+  font-size: 34px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
 }
 
 .about {
-    &__body {
-        width: 183px+384px+256px;
-        margin: 0 auto;
+  &__body {
+    width: 183px+384px+256px;
+    margin: 0 auto;
+  }
+
+  &__header {
+  }
+
+  &__title {
+    margin: 0px 0px 37px 0px;
+    position: relative;
+    padding: 0px 0px 34px 0px;
+
+    &::after {
+      content: '';
+      display: block;
+      background-color: #000;
+      height: 1px;
+      width: 81px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin: 0px 0px 0px -42px;
     }
+  }
 
-    &__header {}
+  &__text {
+    line-height: 26px;
+    color: $color-gray;
+    font-weight: 300;
+    text-align: center;
+    width: 688px;
+    margin: 0 auto 69px;
+  }
 
-    &__title {
-        margin: 0px 0px 37px 0px;
-        position: relative;
-        padding: 0px 0px 34px 0px;
+  &__row {
+  }
 
-        &::after {
-            content: '';
-            display: block;
-            background-color: #000;
-            height: 1px;
-            width: 81px;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            margin: 0px 0px 0px -42px;
-        }
-    }
-
-    &__text {
-        line-height: 26px;
-        color: $color-gray;
-        font-weight: 300;
-        text-align: center;
-        width: 688px;
-        margin: 0 auto 69px;
-    }
-
-    &__row {}
-
-    &__column {}
+  &__column {
+  }
 }
 
 .item {
-    &-about {}
+  &-about {
+  }
 
-    &-about__icon {
-        width: 92px;
-        height: 92px;
-        border-radius: 50%;
-        border: solid #f2f2f2;
-        position: relative;
-        margin: 0 auto 41px;
+  &-about__icon {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    border: solid #f2f2f2;
+    position: relative;
+    margin: 0 auto 41px;
 
-        & img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            display: block;
-            margin: -18px 0px 0px -18px;
-        }
+    & img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      margin: -18px 0px 0px -18px;
     }
+  }
 
-    &-about__title {
-        font-size: 22px;
-        letter-spacing: 4px;
-        font-weight: 400;
-        text-align: center;
-        text-transform: uppercase;
-        margin: 0 auto 35px;
-    }
+  &-about__title {
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto 35px;
+  }
 
-    &-about__text {
-        line-height: 26px;
-        color: $color-gray;
-        font-weight: 300;
-        text-align: center;
-        margin: 0px 0px 70px 0px;
-    }
+  &-about__text {
+    line-height: 26px;
+    color: $color-gray;
+    font-weight: 300;
+    text-align: center;
+    margin: 0px 0px 70px 0px;
+  }
 }

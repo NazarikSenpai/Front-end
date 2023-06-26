@@ -1,5 +1,5 @@
 /* eslint-disable require-jsdoc */
-"use strict";
+'use strict';
 
 function pow(number, powerNumber) {
   if (powerNumber == 1) {

@@ -1,4 +1,4 @@
-"use strict"
+'use strict';
 //Function expression:
 // let sayHi = function(){
 //     console.log("Hi, there!");
@@ -34,17 +34,13 @@ let welcome;
 //     function () { alert("Hi!"); };
 
 if (age < 18) {
-
-    function welcome() {
-        alert("Привет!");
-    }
-
+  function welcome() {
+    alert('Привет!');
+  }
 } else {
-
-    function welcome() {
-        alert("Здравствуйте!");
-    }
-
+  function welcome() {
+    alert('Здравствуйте!');
+  }
 }
 
 // if (age < 18) {

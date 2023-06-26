@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 // console.log(true || true);
 // console.log(false || true);
 // console.log(true || false);
@@ -41,23 +41,21 @@
 // if (age > 14 || age < 90) {
 //     console.log('Your age isn`t between 14 and 90');
 // }
-let password = "TheMaster";
-let userLogin = prompt("Login:", "");
-let userPassword = "";
-if (userLogin === "Admin") {
-
-  userPassword = prompt("Password:", "");
+let password = 'TheMaster';
+let userLogin = prompt('Login:', '');
+let userPassword = '';
+if (userLogin === 'Admin') {
+  userPassword = prompt('Password:', '');
 
   if (userPassword === password) {
-    alert("Welcome!");
+    alert('Welcome!');
   } else if (userPassword != null) {
-    alert("Wrong password");
+    alert('Wrong password');
   }
-
 } else if (userLogin != null) {
-  alert("I don`t know you");
+  alert('I don`t know you');
 }
 
 if (userLogin == null || userPassword == null) {
-  alert("Canseled");
+  alert('Canseled');
 }

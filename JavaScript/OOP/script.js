@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-"use strict";
+'use strict';
 
 /* class Animal {
 
@@ -51,34 +51,30 @@ const cat = new Cat({
 }); */
 
 class Component {
-
-  constructor (selector) {
+  constructor(selector) {
     this.$element = document.querySelector(selector);
   }
 
   hide() {
-    this.$element.style.display = "none";
+    this.$element.style.display = 'none';
   }
 
   show() {
-    this.$element.style.display = "block";
+    this.$element.style.display = 'block';
   }
-
 }
 
 class Box extends Component {
-
-  constructor (params) {
+  constructor(params) {
     super(params.selector);
 
     this.$element.style.background = params.color;
-    this.$element.style.width = this.$element.style.height = params.size + "px";
+    this.$element.style.width = this.$element.style.height = params.size + 'px';
   }
-
 }
 
 const container = new Box({
-  selector: "#container",
+  selector: '#container',
   size: 200,
-  color: "black",
+  color: 'black',
 });

@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
-console.log("innocent rabbit");
-console.log(checkSpam("innocent rabbit"));
+console.log('innocent rabbit');
+console.log(checkSpam('innocent rabbit'));
 
 //Моє рішення:
 // function checkSpam(str) {
@@ -15,5 +15,5 @@ console.log(checkSpam("innocent rabbit"));
 function checkSpam(str) {
   let lowerStr = str.toLowerCase();
 
-  return lowerStr.includes("viagra") || lowerStr.includes("xxx");
+  return lowerStr.includes('viagra') || lowerStr.includes('xxx');
 }

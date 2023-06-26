@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-"use strict";
+'use strict';
 
 /* Правила перетворення */
 
@@ -47,9 +47,9 @@
 /* .toString() та .valueOf() */
 
 let user = {
-  name: "John",
+  name: 'John',
   age: 32,
-  sex: "male",
+  sex: 'male',
   money: 300000,
 
   toString() {
@@ -60,20 +60,21 @@ let user = {
   },
 };
 
-console.log(String(user));//автоматично викликається .toString()
-console.log(user.valueOf() === user);//valueOf повертає сам об'єкт по дефолту
+console.log(String(user)); //автоматично викликається .toString()
+console.log(user.valueOf() === user); //valueOf повертає сам об'єкт по дефолту
 
-console.log(user + 300);//викликається valueOf
+console.log(user + 300); //викликається valueOf
 
 let car = {
-  brand: "Mercedes",
+  brand: 'Mercedes',
   price: 60000,
   maxSpeed: 450,
 
-  toString() {//Якщо описаний тільки toString то при будь-якому претворенні буде використовуватись тільки він
-    return this.price;//Перетворення може вернути будь-який примітив і навіть об'єкт якщо це toString valueOf
-  }
+  toString() {
+    //Якщо описаний тільки toString то при будь-якому претворенні буде використовуватись тільки він
+    return this.price; //Перетворення може вернути будь-який примітив і навіть об'єкт якщо це toString valueOf
+  },
 };
 
-console.log(car + 400);//Mercedes400
+console.log(car + 400); //Mercedes400
 console.log(String(car));

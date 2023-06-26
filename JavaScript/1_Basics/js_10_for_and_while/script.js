@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 // let repeatNumber = 10;
 
 // let count = 5;
@@ -32,7 +32,6 @@
 
 // alert(sum);
 
-
 // for (let index = 0; index < 20; index++) {
 //     if(!!!(index%3)){
 //         console.log(index);
@@ -46,7 +45,7 @@
 //       let value = Math.round(Math.random()*10);
 //       if (!value) {
 //         break label;
-//       }  
+//       }
 //       console.log(value);
 //     }
 
@@ -93,10 +92,9 @@
 let primeBorder = 20;
 
 if (primeBorder < 2) {
-  console.log("Простих чисел нема");
+  console.log('Простих чисел нема');
 } else {
-  primeList:
-  for (let counter = 2; counter <= primeBorder; counter++) {
+  primeList: for (let counter = 2; counter <= primeBorder; counter++) {
     for (let devider = 2; devider < counter; devider++) {
       if (counter % devider == 0) {
         continue primeList;

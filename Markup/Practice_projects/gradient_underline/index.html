@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gradient underline</title>
     <style>
-        body{
-            background-color: #2a2a2a;
-        }
-        .container{
-            display: flex;
-            justify-content: space-around;
-            
-        }
-        a {
-            text-decoration: none;
-            background: linear-gradient(to right, transparent, transparent), center linear-gradient(to right, #ff66ed 0%, #9d0ffc 25%, #2702f7 50%, #00b6ff 75%, #02ff5a 100%);
-            background-size: 100% 2px, 0 2px;
-            background-position: 100% 100%, 50% 100%;
-            background-repeat: no-repeat;
-            transition: background-size 400ms;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bold;
-            font-size: 50px;
-            color: #fff;
-        }
+      body {
+        background-color: #2a2a2a;
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+      }
+      a {
+        text-decoration: none;
+        background: linear-gradient(to right, transparent, transparent),
+          center
+            linear-gradient(
+              to right,
+              #ff66ed 0%,
+              #9d0ffc 25%,
+              #2702f7 50%,
+              #00b6ff 75%,
+              #02ff5a 100%
+            );
+        background-size: 100% 2px, 0 2px;
+        background-position: 100% 100%, 50% 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        color: #fff;
+      }
 
-        a:hover {
-            background-size: 0 2px, 100% 2px;
-        }
+      a:hover {
+        background-size: 0 2px, 100% 2px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <a href="http://google.com">What a beautiful hover underline!</a>
+      <a href="http://google.com">What a beautiful hover underline!</a>
     </div>
-</body>
-
+  </body>
 </html>

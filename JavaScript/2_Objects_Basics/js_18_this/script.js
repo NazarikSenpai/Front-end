@@ -1,22 +1,25 @@
-"use strict";
+'use strict';
 let user = {
-  name: "Nazariy",
+  name: 'Nazariy',
   age: 19,
-  gender: "male",
-  sayBye() {//method shorthand
-    console.log("Bye!");
+  gender: 'male',
+  sayBye() {
+    //method shorthand
+    console.log('Bye!');
   },
   getName() {
     return this.name;
   },
   getGender() {
-    let arrowReturn = () => { return this.gender; }; // тут стрілочна функція не має свого this, вона бере його із getGender
+    let arrowReturn = () => {
+      return this.gender;
+    }; // тут стрілочна функція не має свого this, вона бере його із getGender
     return arrowReturn;
-  }
+  },
 };
 
 let animal = {
-  name: "Arrwida",
+  name: 'Arrwida',
   age: 7,
 };
 
@@ -25,7 +28,7 @@ let animal = {
 // }
 
 function sayHello() {
-  console.log("Hello world!");
+  console.log('Hello world!');
 }
 
 function getAge() {
@@ -37,7 +40,6 @@ animal.getAge = getAge;
 console.log(user.getAge());
 console.log(animal.getAge());
 
-
 user.sayHello = sayHello;
 
 user.sayHello();
@@ -46,11 +48,12 @@ console.log(user.getName());
 
 let admin = user;
 //user.name = "Tamara";
-user = null;//deleted object ref in user, but not the object
+user = null; //deleted object ref in user, but not the object
 console.log(admin.getName());
 //console.log(getAge());//return undefined or error
 
-let arrowFoo = () => {//приклад того що стрілочна функція бере this ззовні
+let arrowFoo = () => {
+  //приклад того що стрілочна функція бере this ззовні
   console.log(this);
 };
 arrowFoo();

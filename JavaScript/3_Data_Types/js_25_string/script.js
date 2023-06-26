@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-"use strict";
+'use strict';
 
 /* Лапки */
 
@@ -20,13 +20,11 @@ Zoro,
 
 /* Спецсимволи */
 
-let doubleGreet = "Hello, my friend!\n\tNice to meet you!" ;
-let backGreet = 
-`Hello, my friend!
+let doubleGreet = 'Hello, my friend!\n\tNice to meet you!';
+let backGreet = `Hello, my friend!
 \tNice to meet you!`;
-//console.log(doubleGreet);  
+//console.log(doubleGreet);
 //console.log(doubleGreet==backGreet);
-
 
 /* Довжина строки */
 
@@ -43,7 +41,6 @@ let backGreet =
 // //   console.log(char);
 // // }
 
-
 // for (let tab = " ", index = 0; index < doubleGreet.length; index++) {
 //   console.log(tab + doubleGreet[index]);
 //   tab += " ";
@@ -54,7 +51,7 @@ let backGreet =
 // doubleGreet[0] = "!";// ERROR
 //console.log(doubleGreet[0]);
 
-doubleGreet = "!-!" + doubleGreet.substring(1, doubleGreet.length);
+doubleGreet = '!-!' + doubleGreet.substring(1, doubleGreet.length);
 //console.log(doubleGreet);
 
 /* Зміна регістру */
@@ -82,7 +79,7 @@ doubleGreet = "!-!" + doubleGreet.substring(1, doubleGreet.length);
 /* Побітове НЕ */
 
 // //Використовується тільки в старому коді
-// while (~(targetPos = doubleGreet.indexOf(target, ++targetPos))) {//~n = -(n+1)    ~(-1) = 0 
+// while (~(targetPos = doubleGreet.indexOf(target, ++targetPos))) {//~n = -(n+1)    ~(-1) = 0
 //   positions += `${targetPos} `;
 // }
 
@@ -110,34 +107,34 @@ doubleGreet = "!-!" + doubleGreet.substring(1, doubleGreet.length);
 
 /* Порівняння строк */
 
-console.log("a" > "Z");
-console.log("Ö" > "Z");
+console.log('a' > 'Z');
+console.log('Ö' > 'Z');
 
-console.log("Ö".codePointAt(0));
-console.log("Z".codePointAt(0));
-console.log("z".codePointAt(0));
-console.log("a".codePointAt(0));
+console.log('Ö'.codePointAt(0));
+console.log('Z'.codePointAt(0));
+console.log('z'.codePointAt(0));
+console.log('a'.codePointAt(0));
 
 console.log(String.fromCharCode(122));
 
-let stringOfChars = "";
+let stringOfChars = '';
 for (let index = 65, counter = 0; index <= 220; index++) {
-  stringOfChars += String.fromCharCode(index) + "  ";
+  stringOfChars += String.fromCharCode(index) + '  ';
   counter++;
 
   if (counter % 10 == 0) {
-    stringOfChars += "\n";
+    stringOfChars += '\n';
   }
 }
 console.log(stringOfChars);
 
 /* Правильне порівняння строк */
 
-console.log("X".localeCompare("Х", "uk", { sensitivity: "base" }));//(compareString[, locales[, options]])
+console.log('X'.localeCompare('Х', 'uk', { sensitivity: 'base' })); //(compareString[, locales[, options]])
 
 /* repeat */
 
-let char = "Char";
-console.log("repeat(0):", char.repeat(0));
-console.log("repeat(10):", char.repeat(10));
+let char = 'Char';
+console.log('repeat(0):', char.repeat(0));
+console.log('repeat(10):', char.repeat(10));
 // console.log("repeat(-1):", char.repeat(-1));//Invalid count value

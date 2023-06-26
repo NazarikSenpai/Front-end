@@ -52,5 +52,3 @@ function objOperation(obj, operation) {//функція для операцій 
 let user = { name: "Nika" };
 
 visitors.add(user);//зберігає унікальних відвідувачів сайту */
-
-

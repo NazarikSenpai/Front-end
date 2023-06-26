@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-"use strict";
+'use strict';
 
 /* splice */
 
@@ -198,5 +198,3 @@ console.log(candidates.filter(appleCompany.canJoin, appleCompany));//thisArg т�
 let someArr = new Array(10);
 someArr.fill("bla");//заповнює масив однаковими елементами
 console.log(someArr); */
-
-
