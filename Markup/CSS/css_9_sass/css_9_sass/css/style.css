@@ -1,8 +1,10 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
+
 *,
 *:before,
 *:after {
@@ -10,23 +12,27 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 :focus,
 :active {
   outline: none;
 }
+
 a:focus,
 a:active {
   outline: none;
 }
+
 nav,
 footer,
 header,
 aside {
   display: block;
 }
+
 html,
 body {
-  font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
+  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
   height: 100%;
   width: 100%;
   font-style: 100%;
@@ -36,34 +42,45 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 input,
 button,
 textarea {
   font-family: inherit;
 }
+
 input::-ms-clear {
   display: none;
 }
+
+/*Убирает крестик у текстового поля в IE. сейчас бесполезно потому, что explorer прекратил свою работу*/
 button {
   cursor: pointer;
 }
+
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
+
+/* убирает лишние отступы в кнопке в mozzila firefox */
 a,
 a:visited {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 ul li {
   list-style-type: none;
 }
+
 img {
   vertical-align: top;
 }
+
 h1,
 h2,
 h3,
@@ -73,13 +90,30 @@ h6 {
   font-style: inherit;
   font-weight: 400;
 }
+
+/* End of CSS reset */
+/* body {
+    padding: 20px;
+    font-size: 35px;
+
+    div {
+        text-align: center;
+        font-size: 15px;
+
+        p {
+            color: brown;
+        }
+
+    }
+} */
 .block span:hover {
   text-shadow: 0 0 2px;
 }
-.block--big,
-.link-2:hover {
+
+.block--big, .link-2:hover {
   font-size: 100px;
 }
+
 .block {
   width: 48%;
   height: 80%;
@@ -99,10 +133,10 @@ h6 {
   font-size: 30px;
   line-height: 55px;
 }
-.block.block--big,
-.block.link-2:hover {
+.block.block--big, .block.link-2:hover {
   font-size: 30px;
 }
+
 .link {
   font-size: 30px;
   color: violet;
@@ -119,6 +153,7 @@ h6 {
   left: 50%;
   font-size: 20px;
 }
+
 .mixinparagraph {
   font-size: 30px;
   color: rgba(255, 132, 0, 0.6392156863);
@@ -126,6 +161,7 @@ h6 {
 .mixinparagraph:hover {
   color: #ff8400;
 }
+
 .link-2 {
   font-size: 50px;
-}
+}/*# sourceMappingURL=style.css.map */
